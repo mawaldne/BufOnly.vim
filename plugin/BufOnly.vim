@@ -59,11 +59,12 @@ function! BufOnly(buffer, bang)
 		endif
 		let n = n+1
 	endwhile
-
-	if delete_count == 1
-		echomsg delete_count "buffer deleted"
-	elseif delete_count > 1
-		echomsg delete_count "buffers deleted"
-	endif
+	
+        " Remove confirmation
+	" if delete_count == 1
+	"	echomsg delete_count "buffer deleted"
+	" elseif delete_count > 1
+	"	echomsg delete_count "buffers deleted"
+	" endif
 
 endfunction
